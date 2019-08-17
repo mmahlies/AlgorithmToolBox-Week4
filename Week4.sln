@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{F5291CB9-F5CD-4C4C-B7A6-718D8139FA7E}"
 EndProject
@@ -19,37 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuckSortWithRandom", "QuckS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowCloseADataisToBeingSorted", "HowCloseADataisToBeingSorted\HowCloseADataisToBeingSorted.csproj", "{80634241-3427-4FDC-B535-CF4F76FCA979}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort.Test", "MergeSort.Test\MergeSort.Test.csproj", "{73F400D1-BEA7-4B01-8A06-D5C9EC3D06AE}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://mohamedmahlies.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = MergeSort\\MergeSort.csproj
-		SccProjectName1 = MergeSort
-		SccLocalPath1 = MergeSort
-		SccProjectUniqueName2 = SelectionSort\\SelectionSort.csproj
-		SccProjectName2 = SelectionSort
-		SccLocalPath2 = SelectionSort
-		SccProjectUniqueName3 = QuickSort\\QuickSort.csproj
-		SccProjectName3 = QuickSort
-		SccLocalPath3 = QuickSort
-		SccProjectUniqueName4 = BinarySearch\\BinarySearch.csproj
-		SccProjectName4 = BinarySearch
-		SccLocalPath4 = BinarySearch
-		SccProjectUniqueName5 = FindMajorityElement\\FindMajorityElement.csproj
-		SccProjectName5 = FindMajorityElement
-		SccLocalPath5 = FindMajorityElement
-		SccProjectUniqueName6 = RandomQuickSort\\RandomQuickSort.csproj
-		SccProjectName6 = RandomQuickSort
-		SccLocalPath6 = RandomQuickSort
-		SccProjectUniqueName7 = QuckSortWithRandom\\QuckSortWithRandom.csproj
-		SccProjectName7 = QuckSortWithRandom
-		SccLocalPath7 = QuckSortWithRandom
-		SccProjectUniqueName8 = HowCloseADataisToBeingSorted\\HowCloseADataisToBeingSorted.csproj
-		SccProjectName8 = HowCloseADataisToBeingSorted
-		SccLocalPath8 = HowCloseADataisToBeingSorted
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -87,8 +59,15 @@ Global
 		{80634241-3427-4FDC-B535-CF4F76FCA979}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80634241-3427-4FDC-B535-CF4F76FCA979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80634241-3427-4FDC-B535-CF4F76FCA979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F400D1-BEA7-4B01-8A06-D5C9EC3D06AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F400D1-BEA7-4B01-8A06-D5C9EC3D06AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F400D1-BEA7-4B01-8A06-D5C9EC3D06AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F400D1-BEA7-4B01-8A06-D5C9EC3D06AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE2B7B27-B51B-44B6-924E-E04FDFB39292}
 	EndGlobalSection
 EndGlobal

@@ -28,7 +28,7 @@ namespace MergeSort
                 DoMerge(array, l, h, m);
             }
         }
-
+                          // merge with sort
         private static void DoMerge(int[] array, int l, int h, int m)
         {
             int[] arr1 = new int[m - l + 1];
