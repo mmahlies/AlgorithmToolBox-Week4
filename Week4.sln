@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{F5291CB9-F5CD-4C4C-B7A6-718D8139FA7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{6A894256-7BED-4CF2-8FC0-A46605B3F465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{791C94D2-22F4-41D4-AC62-252C5DABF3EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{BF45AF07-B4A8-4078-9D18-AFCAB487701B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMajorityElement", "FindMajorityElement\FindMajorityElement.csproj", "{21DBE873-424A-4F06-B3F4-A442F0A0E425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomQuickSort", "RandomQuickSort\RandomQuickSort.csproj", "{D28E8CEC-24AE-4CF3-8A3C-0FB49B5DC7BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuckSortWithRandom", "QuckSortWithRandom\QuckSortWithRandom.csproj", "{48B8D4B2-3B3D-4510-878B-44045209FEB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowCloseADataisToBeingSorted", "HowCloseADataisToBeingSorted\HowCloseADataisToBeingSorted.csproj", "{80634241-3427-4FDC-B535-CF4F76FCA979}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mohamedmahlies.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MergeSort\\MergeSort.csproj
+		SccProjectName1 = MergeSort
+		SccLocalPath1 = MergeSort
+		SccProjectUniqueName2 = SelectionSort\\SelectionSort.csproj
+		SccProjectName2 = SelectionSort
+		SccLocalPath2 = SelectionSort
+		SccProjectUniqueName3 = QuickSort\\QuickSort.csproj
+		SccProjectName3 = QuickSort
+		SccLocalPath3 = QuickSort
+		SccProjectUniqueName4 = BinarySearch\\BinarySearch.csproj
+		SccProjectName4 = BinarySearch
+		SccLocalPath4 = BinarySearch
+		SccProjectUniqueName5 = FindMajorityElement\\FindMajorityElement.csproj
+		SccProjectName5 = FindMajorityElement
+		SccLocalPath5 = FindMajorityElement
+		SccProjectUniqueName6 = RandomQuickSort\\RandomQuickSort.csproj
+		SccProjectName6 = RandomQuickSort
+		SccLocalPath6 = RandomQuickSort
+		SccProjectUniqueName7 = QuckSortWithRandom\\QuckSortWithRandom.csproj
+		SccProjectName7 = QuckSortWithRandom
+		SccLocalPath7 = QuckSortWithRandom
+		SccProjectUniqueName8 = HowCloseADataisToBeingSorted\\HowCloseADataisToBeingSorted.csproj
+		SccProjectName8 = HowCloseADataisToBeingSorted
+		SccLocalPath8 = HowCloseADataisToBeingSorted
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5291CB9-F5CD-4C4C-B7A6-718D8139FA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5291CB9-F5CD-4C4C-B7A6-718D8139FA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5291CB9-F5CD-4C4C-B7A6-718D8139FA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5291CB9-F5CD-4C4C-B7A6-718D8139FA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A894256-7BED-4CF2-8FC0-A46605B3F465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A894256-7BED-4CF2-8FC0-A46605B3F465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A894256-7BED-4CF2-8FC0-A46605B3F465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A894256-7BED-4CF2-8FC0-A46605B3F465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791C94D2-22F4-41D4-AC62-252C5DABF3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791C94D2-22F4-41D4-AC62-252C5DABF3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791C94D2-22F4-41D4-AC62-252C5DABF3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791C94D2-22F4-41D4-AC62-252C5DABF3EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF45AF07-B4A8-4078-9D18-AFCAB487701B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF45AF07-B4A8-4078-9D18-AFCAB487701B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF45AF07-B4A8-4078-9D18-AFCAB487701B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF45AF07-B4A8-4078-9D18-AFCAB487701B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21DBE873-424A-4F06-B3F4-A442F0A0E425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21DBE873-424A-4F06-B3F4-A442F0A0E425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21DBE873-424A-4F06-B3F4-A442F0A0E425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21DBE873-424A-4F06-B3F4-A442F0A0E425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D28E8CEC-24AE-4CF3-8A3C-0FB49B5DC7BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28E8CEC-24AE-4CF3-8A3C-0FB49B5DC7BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D28E8CEC-24AE-4CF3-8A3C-0FB49B5DC7BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D28E8CEC-24AE-4CF3-8A3C-0FB49B5DC7BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48B8D4B2-3B3D-4510-878B-44045209FEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B8D4B2-3B3D-4510-878B-44045209FEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B8D4B2-3B3D-4510-878B-44045209FEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B8D4B2-3B3D-4510-878B-44045209FEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80634241-3427-4FDC-B535-CF4F76FCA979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80634241-3427-4FDC-B535-CF4F76FCA979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80634241-3427-4FDC-B535-CF4F76FCA979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80634241-3427-4FDC-B535-CF4F76FCA979}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
