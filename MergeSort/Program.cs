@@ -10,7 +10,7 @@ namespace MergeSort
     {
         static void Main(string[] args)
         {
-            int[] array = new int[] { 9,5, 3,4};
+            int[] array = new int[] {0,1,2,3};
             DoMergeSort(array, 0, array.Length -1);
             foreach (var item in array)
             {
@@ -18,7 +18,7 @@ namespace MergeSort
             }
         }
 
-        private static void DoMergeSort(int[] array, int l, int h)
+        public static void DoMergeSort(int[] array, int l, int h)
         {
             if (h > l)  
             {
