@@ -21,23 +21,23 @@ namespace HowCloseADataisToBeingSorted
                 array[i] = int.Parse(inputRow[i]);
             }
         
-            DoMergeSort(array, 0, array.Length - 1, ref inversionCount);
+            MergeSort(array, 0, array.Length - 1, ref inversionCount);
             Console.WriteLine(inversionCount.ToString());
 
         }
 
-        private static void DoMergeSort(int[] array, int low, int high, ref int inversionCount)
+        private static void MergeSort(int[] array, int low, int high, ref int inversionCount)
         {
             if (low < high)
             {
                 int mid = ((high - low) / 2) + low ;
-                DoMergeSort(array, low, mid, ref inversionCount);
-                DoMergeSort(array, mid + 1, high, ref inversionCount);
-                Sort(array, low, high, mid, ref inversionCount);
+                MergeSort(array, low, mid, ref inversionCount);
+                MergeSort(array, mid + 1, high, ref inversionCount);
+                Merge(array, low, high, mid, ref inversionCount);
             }
         }
 
-        private static void Sort(int[] array, int low, int high, int mid, ref int inversionCount)
+        private static void Merge(int[] array, int low, int high, int mid, ref int inversionCount)
         {
             int[] temp1 = new int[mid - low + 1];
             int[] temp2 = new int[high - mid];
@@ -50,6 +50,7 @@ namespace HowCloseADataisToBeingSorted
             // reset the counter
             indexTemp1 = 0;
 
+            // fill temp2 array
             for (int i = mid+1; i <= high; i++)
                 temp2[indexTemp2++] = array[i];
             
