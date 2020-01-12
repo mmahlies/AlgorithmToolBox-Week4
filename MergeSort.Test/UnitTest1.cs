@@ -8,7 +8,7 @@ namespace MergeSort.Test
     {
         [TestMethod]
         public void TestMethod1()
-        {
+        { 
         }
     }
 }

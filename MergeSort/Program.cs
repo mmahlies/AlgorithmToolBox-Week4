@@ -10,17 +10,20 @@ namespace MergeSort
     {
         static void Main(string[] args)
         {
-            int[] array = new int[] { 9,5, 3,4};
-            DoMergeSort(array, 0, array.Length -1);
+            int[] array = new int[] { 9, 5, 3, 4, 1, 2 };
+            // DoMergeSort(array, 0, array.Length -1);
+            DoMergeSort(array);
             foreach (var item in array)
             {
                 Console.WriteLine(item);
             }
         }
 
-        private static void DoMergeSort(int[] array, int l, int h)
+
+
+        public static void DoMergeSort(int[] array, int l, int h)
         {
-            if (h > l)  
+            if (h > l)
             {
                 int m = ((h - l) / 2) + l;
                 DoMergeSort(array, l, m);
@@ -28,32 +31,48 @@ namespace MergeSort
                 DoMerge(array, l, h, m);
             }
         }
-                          // merge with sort
+
+
+        // with itreative appraoch
+        public static void DoMergeSort(int[] array)
+        {
+            int n = array.Length;
+            for (int si = 1; si < n; si += si)
+            {
+                for (int lo = 0; lo <= n - si; lo += (si * si))
+                {
+                    int h = lo + si;
+                    int mid = (si / 2) + lo;
+                    DoMerge(array, lo, h, mid);
+                }
+            }
+        }
+        // merge with sort
         private static void DoMerge(int[] array, int l, int h, int m)
         {
             int[] arr1 = new int[m - l + 1];
             int[] arr2 = new int[h - m];
-           // int[] arr3 = new int[h - l + 1];
+            // int[] arr3 = new int[h - l + 1];
 
             int arr1Index = 0;
             int arr2Index = 0;
             int bigArrayIndex = l;
 
-            
+
             for (int i = l; i <= m; i++)
             {
                 arr1[arr1Index] = array[i];
                 arr1Index++;
             }
             arr1Index = 0;
-            
+
             for (int j = m + 1; j <= h; j++)
             {
                 arr2[arr2Index] = array[j];
                 arr2Index++;
             }
             arr2Index = 0;
-            
+
             while (arr1Index < arr1.Length && arr2Index < arr2.Length)
             {
                 if (arr1[arr1Index] > arr2[arr2Index])
@@ -82,9 +101,5 @@ namespace MergeSort
             }
         }
 
-
-
-
-       
     }
 }
