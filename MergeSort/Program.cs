@@ -10,8 +10,10 @@ namespace MergeSort
     {
         static void Main(string[] args)
         {
-            int[] array = new int[] { 9, 5, 3, 4, 1, 2 };
-            // DoMergeSort(array, 0, array.Length -1);
+            int[] array = new int[] { 9, 5, 3, 4, 1  ,3,2,6,9,8,7,4,2,3,6,9,8,7,4,5,6,2,6,};
+            // top down
+           // DoMergeSort(array, 0, array.Length -1);
+           // down up
             DoMergeSort(array);
             foreach (var item in array)
             {
@@ -21,14 +23,19 @@ namespace MergeSort
 
 
 
-        public static void DoMergeSort(int[] array, int l, int h)
+        public static void DoMergeSort(int[] array, int lo, int h)
         {
-            if (h > l)
+            if (h > lo)
             {
-                int m = ((h - l) / 2) + l;
-                DoMergeSort(array, l, m);
+                int m = ((h - lo) / 2) + lo;
+                DoMergeSort(array, lo, m);
                 DoMergeSort(array, m + 1, h);
-                DoMerge(array, l, h, m);
+                // because we merge to sorted sub arrays we can make sure from the both is order so save the cost of this tep
+                if (array[m] > array[m+1])
+                {
+                    DoMerge(array, lo, h, m);
+                }
+               
             }
         }
 
@@ -37,12 +44,13 @@ namespace MergeSort
         public static void DoMergeSort(int[] array)
         {
             int n = array.Length;
-            for (int si = 1; si < n; si += si)
+            // 1 2 4
+            for (int si = 1; si < n; si = si + si)
             {
-                for (int lo = 0; lo <= n - si; lo += (si * si))
+                for (int lo = 0; lo < n  ; lo += si+si)
                 {
-                    int h = lo + si;
-                    int mid = (si / 2) + lo;
+                    int h = (lo + (si*2) - 1) < n ? (lo + (si * 2) - 1) : n-1;
+                    int mid = (lo + si -1) < n ? (lo + si - 1) : ((h-lo)/2 )+ lo;
                     DoMerge(array, lo, h, mid);
                 }
             }
