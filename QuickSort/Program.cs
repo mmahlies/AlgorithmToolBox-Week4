@@ -10,12 +10,14 @@ namespace QuickSort
     {
         static void Main(string[] args)
         {
-            int[] array = new int[] { 1, 2, 3, 4, 5 };
-            DoQuickSort(array, 0, array.Length - 1, isRandom: true);
+            int[] array = new int[] { 1, 4, 3, 5, 2,6,9,8,10 , 0 , 11 , 13 , 12};
+             QuickSortFromRobertSedwerg.QuickSort(array, 0, array.Length - 1);
+            //DoQuickSort(array, 0, array.Length - 1, isRandom: true);
             foreach (var item in array)
             {
                 Console.WriteLine(item);
             }
+            Console.Read();
         }
 
         private static void DoQuickSort(int[] array, int l, int r, bool isRandom)
